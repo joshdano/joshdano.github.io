@@ -2,8 +2,11 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	margin: 60px auto;
     width: 70%;
-    text-align: center;
     color:black;
+}
+
+h1 {
+	text-align: center;
 }
 
 a:link { 
