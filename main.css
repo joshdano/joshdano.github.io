@@ -15,7 +15,9 @@ a:visited {
 }*/
 
 #left {
-	overflow: hidden;
+	width: 20%;
+	margin-left: 20px;
+	float: left;
 }
 
 #right {
