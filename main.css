@@ -7,11 +7,11 @@ body {
 }
 
 a:link { 
-	color: blue;
+	color: #a9a9a9;
 	text-decoration: none;
 }
 
 a:visited {
-	color: blue;
+	color: #a9a9a9;
 	text-decoration: none;
 }
