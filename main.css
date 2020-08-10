@@ -16,14 +16,30 @@ a:visited {
 	text-decoration: none;
 }
 
-header {
+/*header {
 	float: left;
 	width: 20%;
 	padding: 20px;
-}
+}*/
 
-nav {
-	float: left;
+/*nav {
+	float: right;
 	width: 80%;
 	padding: 20px;
+}*/
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
 }
