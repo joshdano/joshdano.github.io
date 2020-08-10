@@ -5,8 +5,12 @@ body {
     color:black;
 }
 
-h1 {
+body h1 {
 	text-align: center;
+}
+
+body h2 p {
+	text-align: left;
 }
 
 a:link { 
