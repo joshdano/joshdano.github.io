@@ -1,4 +1,4 @@
-/*body {
+body {
 	font-family: Tahoma, Geneva, sans-serif;
     width: 70%;
     color:black;
@@ -12,16 +12,4 @@ a:link {
 a:visited {
 	color: blue;
 	text-decoration: none;
-}*/
-
-#left {
-	width: 20%;
-	margin-left: 20px;
-	float: left;
-}
-
-#right {
-	width: 80%;
-	margin-left: 20px;
-	float: right;
 }
