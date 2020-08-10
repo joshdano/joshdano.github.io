@@ -1,6 +1,5 @@
 body {
-	padding: 80px;
-	text-align: left;
-	background: blue;
-	color: black;
+	margin: 60px auto;
+    width: 70%;
+    text-align: center;
 }
