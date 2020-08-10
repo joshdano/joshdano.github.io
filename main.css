@@ -14,26 +14,13 @@ a:visited {
 	text-decoration: none;
 }
 
-/*header {
+#left {
 	float: left;
 	width: 20%;
-	padding: 20px;
-}*/
-
-/*nav {
-	float: right;
-	width: 80%;
-	padding: 20px;
-}*/
-
-nav {
-  float: left;
-  width: 80%;
-  padding: 20px;
 }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 20%;
+#right {
+	width: 80%;
+	float: right;
+	margin-left: 20px;
 }
