@@ -1,6 +1,6 @@
 body {
 	font-family: Tahoma, Geneva, sans-serif;
-	margin: 60px auto;
+	margin: -10px auto;
     width: 70%;
 }
 
@@ -8,12 +8,27 @@ h1 {
 	text-align: center;
 	background-color: #f7882f;
 	color: white;
+	padding: 0;
+	margin-bottom: -15px;
 }
 
 h3 {
 	text-align: left;
 	background-color: #f7c331;
 	color: white;
+	padding: 5px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+h6 {
+	text-align: left;
+	font-size: 14px;
+	background-color: #dcc7aa;
+	color: white;
+	padding: 5px;
+	margin-top: -10px;
+	margin-bottom: -10px;
 }
 
 p {
@@ -32,13 +47,9 @@ a:visited {
 }
 
 .nav {
-	background-color: #687a8f;
+	background-color: #7c94a3;
 	color: white;
 	padding: 1px;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-.chunk {
-	background-color: blue;
 }
