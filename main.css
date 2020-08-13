@@ -1,7 +1,12 @@
+@media only screen and (max-width: 1400px) {
+	body {
+		width: 100%;
+	}
+}
 body {
 	font-family: Tahoma, Geneva, sans-serif;
 	margin: -10px auto;
-    width: 70%;
+    width: 90%;
     color:black;
 }
 
@@ -48,27 +53,4 @@ a:visited {
 	padding: 1px;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-.typing p {
-	font-family: Tahoma, Geneva, sans-serif;
-	text-align: left;
-	overflow: hidden;
-	border-right: .15em black;
-	white-space: nowrap;
-	margin: 0 auto;
-	letter-spacing: .05em;
-	animation:
-		typing 3.5s steps(40, end),
-		blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-	from {width: 0;}
-	to {width: 100%;}
-}
-
-@keyframes blink-caret {
-	from, to {border-color: black;}
-	50% {border-color: black;}
 }
