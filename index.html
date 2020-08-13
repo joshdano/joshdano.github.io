@@ -17,7 +17,73 @@
 			width: 70%;
 			padding-left: 25px;
 		}
+		@media only screen and (max-width: 1200px) {
+			.photo {width: 100%;}
+			.txt {width: 100%; float: center;}
+		}
 	</style>
+
+	<!-- code from https://css-tricks.com/snippets/css/typewriter-effect/ -->
+	<script>
+		var TxtType = function(el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 10) || 2000;
+			this.txt = '';
+			this.tick();
+			this.isDeleting = false; 
+		}
+
+		TxtType.prototype.tick = function() {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+
+			if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length -1);
+			}
+			else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
+			this.el.innerHTML = '<span class = "wrap">'+this.txt+'</span>';
+
+			var that = this;
+			var delta = 200 - Math.random() * 100
+
+			if (this.isDeleting) { delta /= 2; }
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+			}
+			else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+			}
+
+			setTimeout(function() {
+				that.tick();
+			}, delta);
+		}
+
+		window.onload = function() {
+			var elements = document.getElementsByClassName('typewrite');
+			for (var i=0; i<elements.length; i++) {
+				var toRotate = elements[i].getAttribute('data-type');
+				var period = elements[i].getAttribute('data-period');
+				if (toRotate) {
+					new TxtType(elements[i], JSON.parse(toRotate), period);
+
+				}
+			}
+			var css = document.createElement("style");
+			css.type = "text/css";
+			css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff }";
+			document.body.appendChild(css);
+		};
+	</script>
+
 </head>
 <body>
 	<div class="nav">
@@ -28,11 +94,14 @@
 			</span>
 		</p>
 	</div>
-	
-	<div class="chunk">
 
-		<h1>welcome.</h1>
-		<h3>about josh</h3>
+	<!-- code from https://css-tricks.com/snippets/css/typewriter-effect/ -->
+		<h1> hi, i'm 
+		<a href="" class="typewrite" data-period="2000" data-type='["joshua dano.", "a student.", "a developer.", "a lifelong learner."]'>
+			<span class = "wrap"></span>
+		</a>
+	</h1>
+		<h3>about me.</h3>
 	
 		<div class="photo">
 			<img src="./images/headshot.png" alt="Headshot of Joshua Dano" width="100%">
@@ -41,7 +110,6 @@
 			<p style="text-align: left; padding-left: 10px; padding-right: 10px;"><i>Hello</i> and <i>welcome</i> to my website! My name is Joshua Dano, but feel free to call me Josh (some even prefer Dano). I'm from Virginia Beach, VA, but I spend most of my time in Charlottesville, VA, as a third-year at the University of Virginia studying Computer Science and Global Public Health. </p>
 
 			<p style="text-align: left; padding-left: 10px; padding-right: 10px;">Throughout my childhood, I was always interested in technology and its ability to connect people. In fact, I even taught myself basic HTML during elementary school! The goal of this website is to showcase my work, my education, and myself. Please feel free to click around, and check out the contact page if you'd like to connect!</p>
-	</div>
 
 </body>
 </html>

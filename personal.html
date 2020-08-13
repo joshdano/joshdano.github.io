@@ -32,6 +32,23 @@
 	<div class="chunk">
 
 		<h1>personal.</h1>
+	<p id="demo"></p>
+	<script>
+		var i = 0;
+		var txt = 'joshua dano';
+		var speed = 50;
+
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElement("demo").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+
+		txt.typeWriter();
+	</script>
+
 
 </body>
 </html>
