@@ -63,3 +63,14 @@ ul {
 	margin: 2px 0 0 0;
 	font-size: 18px;
 }
+footer {
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 100px 0 50px 0;
+}
+
+footer a:link, footer a:visited{
+	color: black;
+	text-decoration: underline;
+}
