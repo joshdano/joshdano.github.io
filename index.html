@@ -15,11 +15,26 @@
 		.text {
 			float: left;
 			width: 70%;
-			padding-left: 25px;
+			padding-left: 10px;
+			padding-right: px;
+			text-align: left;
 		}
-		@media only screen and (max-width: 1200px) {
+		@media only screen and (max-width: 1400px) {
 			.photo {width: 100%;}
-			.txt {width: 100%; float: center;}
+			.photo img {
+				width: 50%;
+				display: block; 
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.text {width: 100%;}
+			.text p {
+				text-align: center;
+				padding: 10px;
+			}
+			.nav p {
+				text-align:;
+			}
 		}
 	</style>
 
@@ -97,7 +112,7 @@
 
 	<!-- code from https://css-tricks.com/snippets/css/typewriter-effect/ -->
 		<h1> hi, i'm 
-		<a href="" class="typewrite" data-period="2000" data-type='["joshua dano.", "a student.", "a developer.", "a lifelong learner."]'>
+		<a href="" class="typewrite" data-period="2000" data-type='["joshua dano.", "a student.", "a developer."]'>
 			<span class = "wrap"></span>
 		</a>
 	</h1>
@@ -107,9 +122,10 @@
 			<img src="./images/headshot.png" alt="Headshot of Joshua Dano" width="100%">
 		</div>
 		<div class="text">
-			<p style="text-align: left; padding-left: 10px; padding-right: 10px;"><i>Hello</i> and <i>welcome</i> to my website! My name is Joshua Dano, but feel free to call me Josh (some even prefer Dano). I'm from Virginia Beach, VA, but I spend most of my time in Charlottesville, VA, as a third-year at the University of Virginia studying Computer Science and Global Public Health. </p>
+			<p><i>Hello</i> and <i>welcome</i> to my website! My name is Joshua Dano, but feel free to call me Josh (some even prefer Dano). I'm from Virginia Beach, VA, but I spend most of my time in Charlottesville, VA, as a third-year at the University of Virginia studying Computer Science and Global Public Health. </p>
 
-			<p style="text-align: left; padding-left: 10px; padding-right: 10px;">Throughout my childhood, I was always interested in technology and its ability to connect people. In fact, I even taught myself basic HTML during elementary school! The goal of this website is to showcase my work, my education, and myself. Please feel free to click around, and check out the contact page if you'd like to connect!</p>
+			<p>Throughout my childhood, I was always interested in technology and its ability to connect people. In fact, I even taught myself basic HTML during elementary school! The goal of this website is to showcase my work, my education, and myself. Please feel free to click around, and check out the contact page if you'd like to connect!</p>
+		</div>
 
 </body>
 </html>
