@@ -1,68 +1,43 @@
+/* universal css for all pages */
+html {
+	background-color: black;
+}
+
+.name {
+	width: 30%;
+}
+
+.links {
+	width: 70%;
+}
+
+.links p {
+	text-align: right;
+}
+
+.name, .links {
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: black;
+}
+
+a:link, a:visited { 
+	color: white;
+	text-decoration: none;
+}
+
 body {
 	font-family: Tahoma, Geneva, sans-serif;
-	margin: -10px auto;
+	color: white;
+	margin: 0px auto;
     width: 80%;
-    color:black;
 }
 
-h1 {
-	text-align: center;
-	background-color: #f7882f;
-	color: white;
-	padding: 0;
-	margin-bottom: 2px;
+footer a:link, footer a:visited {
+	text-decoration: underline;
 }
 
-h3 {
-	text-align: left;
-	background-color: #f7c331;
-	color: white;
-	padding: 5px;
-	margin-bottom: 2px;
-}
-
-h6 {
-	text-align: left;
-	font-size: 16px;
-	background-color: #dcc7aa;
-	color: white;
-	padding: 7px;
-	margin-bottom: 2px;
-	margin-top: 10px;
-}
-
-p {
-	text-align: left;
-	font-size: 20px;
-	margin: 2px 10px 2px 10px; /* top - right - bottom - left */
-}
-
-a:link { 
-	color: white;
-	text-decoration: none;
-}
-
-a:visited {
-	color: white;
-	text-decoration: none;
-}
-
-.nav {
-	background-color: #7c94a3;
-	color: white;
-	padding: 1px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.nav p {
-	margin: 25px 0 25px 0;
-}
-
-ul {
-	margin: 2px 0 0 0;
-	font-size: 18px;
-}
 footer {
 	width: 100%;
 	float: left;
@@ -70,7 +45,89 @@ footer {
 	margin: 100px 0 50px 0;
 }
 
-footer a:link, footer a:visited{
-	color: black;
-	text-decoration: underline;
+h1, h2, h3 {
+	padding: 5px;
+}
+
+h1 {
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 0px;
+	margin-bottom: 2px;
+}
+
+h2 {
+	text-align: left;
+	background-color: #00ff00;
+	color: white;
+}
+
+h3 {
+	text-align: left;
+	background-color: black;
+	color: #00ff00;
+	margin-bottom: 2px;
+}
+
+/* index page */
+.photo, .text { float: left; }
+
+.photo {
+	width: 25%;
+}
+
+.photo img { padding-left: 35px; }
+
+.text {
+	width: 70%;
+	text-align: left;
+	/*margin-top: 60px;*/
+}
+
+.text p { padding-left: 0 10px 0 10px; }
+
+p {
+	text-align: left;
+	font-size: 20px;
+	margin: 2px 10px 2px 10px; /* top - right - bottom - left */
+}
+
+ul {
+	margin: 2px 0 0 0;
+	font-size: 18px;
+}
+
+/* experiences page */
+
+/* personal page */
+
+/* contact page */
+
+/* compatibility */
+@media only screen and (max-width: 1000px) {
+	/* universal code */
+	.name, .links {
+		width: 100%; 
+	}
+
+	.name p, .links p {
+		text-align: center;
+	}
+	/* index page */
+	.photo { width: 100%; }
+	.photo img {
+		width: 50%;
+		display: block; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text {
+		width: 100%;
+		margin-top: 5px;
+	}
+	.text p {
+		text-align: center;
+		padding: 10px;
+	}
 }
