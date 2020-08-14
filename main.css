@@ -114,6 +114,10 @@ ul {
 	.name p, .links p {
 		text-align: center;
 	}
+
+	.name { padding: 0; }
+
+
 	/* index page */
 	.photo { width: 100%; }
 	.photo img {
