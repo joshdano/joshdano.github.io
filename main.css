@@ -34,7 +34,7 @@ h6 {
 p {
 	text-align: left;
 	font-size: 20px;
-	margin: 2px 0 2px 10px; /* top - right - bottom - left */
+	margin: 2px 10px 2px 10px; /* top - right - bottom - left */
 }
 
 a:link { 
